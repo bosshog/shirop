@@ -27,7 +27,7 @@ h1 {
 }*/
 
 #header {
-	height:196px;
+	height:175px;
 	border-top: 16px solid #eee;
 	text-align:center;
 	position: absolute;
@@ -36,39 +36,82 @@ bottom: 0;
 right: 0;
 left:250px;
 width:924px;
+background:url(../img/header_bg.png) repeat-x transparent;
 }
 
-.logo {
-	padding-top:23px;
+#menu {
+	height:41px;
+	background:url(../img/bg_menu.png) repeat-x transparent;
+	padding: 5px 40px 0 40px;
 }
 
-#header-top {
-	width:924px;
-	margin:0 auto;
-	height:185px;
-	background:url(../img/header_bg.png) repeat-x transparent;
-}
-
-#header-shadow {
-	width:924px;
-	margin:0 auto;
-	height:11px;
-	background:url(../img/header_shadow.png) repeat-x transparent;
+#menu a {
+	height:29px;
+	display:block;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:12px;
+	padding-top:7px;
+	color:#333333;
+	text-shadow:1px solid #fff;
 }
 
 
 
-
-#column {	
-	position: absolute;
-top: 212px;
-left: 250px;
-width: 248px;
-overflow: hidden;
-background-color:#FFF;
-z-index:10;
-
+#buttonmenu1, #buttonmenu2 {
+	float:left;
+	margin-right:10px;
 }
+
+#buttonmenu1 a {
+	width:185px;
+	background: url(../img/button1.png) no-repeat transparent;
+}
+
+#buttonmenu1 a:hover {
+	background: url(../img/button1_hover.png) no-repeat transparent;
+	color:#000;
+}
+
+#buttonmenu1 .active {
+	background: url(../img/button1_hover.png) no-repeat transparent;
+	color:#000;
+}
+
+#buttonmenu2 a {
+	width:93px;
+	background: url(../img/button2.png) no-repeat transparent;
+}
+
+#buttonmenu2 a:hover {
+	background: url(../img/button2_hover.png) no-repeat transparent;
+	color:#000;
+}
+
+#buttonmenu2 .active {
+	background: url(../img/button2_hover.png) no-repeat transparent;
+	color:#000;
+}
+
+#buttonmenu_yellow a {
+	float:right;
+	width:118px;
+	background: url(../img/button_yellow.png) no-repeat transparent;
+}
+
+#buttonmenu_yellow a:hover {
+	background: url(../img/button_yellow_hover.png) no-repeat transparent;
+	color:#000;
+}
+
+#logo {
+	height:134px;
+}
+
+#logo img{
+	height:134px;
+}
+
 
 
 #navbar {
@@ -86,10 +129,12 @@ z-index:10;
 	list-style-type:none;
 	padding:0px;
 	margin:0px;
+	
 }
 
 #navbar li {
 	border-bottom:1px solid #fff;
+	float:left;
 }
 
 #navbar li#first a {
@@ -100,7 +145,6 @@ z-index:10;
 
 
 #navbar li#last a{
-	display:block;
 	width:172px;
 	height:45px;
 	background: url(../img/button.png) no-repeat transparent;
@@ -118,7 +162,6 @@ z-index:10;
 	padding:12px;
 	color:#666;
 	font-size:18px;
-	display:block;
 	text-decoration:none;
 }
 
@@ -142,14 +185,14 @@ z-index:10;
 
 
 #content {
-	position: absolute;
+position: absolute;
 top: 0;
 bottom: 0;
 right: 0;
 left:250px;
 overflow-y: auto;
 width: 924px;
-margin-top: 212px;
+margin-top: 191px;
 background-color:#FFF;
 
 
@@ -157,7 +200,7 @@ background-color:#FFF;
 
 #info, #screenshots, #credits {
 	/*padding-top:230px;*/
-	padding:22px 40px 20px 248px;
+	padding:22px 40px 20px 40px;
 	min-height:600px;
 
 }
